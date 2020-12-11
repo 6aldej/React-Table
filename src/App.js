@@ -139,7 +139,6 @@ export default class App extends Component {
                     update={this.updateData.bind(this)}
                     isSortedFlag={this.state.isSorted}
                   />
-                  
                   <Pagination
                     data={this.state.currentData}
                     currentPage={this.state.activePage}

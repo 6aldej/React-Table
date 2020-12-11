@@ -140,6 +140,7 @@ button:disabled {
 
 .user td {
   cursor: pointer;
+  font-size: 1.5vw;
 }
 
 tr th {

@@ -82,7 +82,7 @@ export default class Pagination extends Component {
 			<tbody>
 				{this.users}
 				<tr>
-					<td colSpan="5" className="index_pagin">
+					<td colSpan="5" className="index_pagin col-sm-6">
 						<ul id="page-numbers" className="pagination">
 							{this.renderPageNumbers}
 						</ul>
