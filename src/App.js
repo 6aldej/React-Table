@@ -131,8 +131,8 @@ export default class App extends Component {
               />
             </div>
 
-            <div className="user-main row col-sm-12">
-              <div className="col-sm-6">
+            <div className="user-main col-sm-12">
+              <div>
                 <table className="user-list table table-bordered table-striped table-hover">
                   <Toolbar
                     data={this.state.currentData}
@@ -148,7 +148,7 @@ export default class App extends Component {
                 </table>
               </div>
 
-              <div className="active-user-cont col-sm-6">
+              <div className="active-user-cont">
                 <div id="activeUser">
                 <ActiveUser
                   data={this.state.currentData}

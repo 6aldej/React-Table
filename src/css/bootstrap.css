@@ -1522,7 +1522,8 @@ pre code {
 
 .table th,
 .table td {
-  padding: 0.8vw;
+  padding: 0.6vw;
+  text-align: center;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
 }

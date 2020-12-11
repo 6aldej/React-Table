@@ -22,7 +22,7 @@ body {
 }
 
 .header-title img{
-  width: 3vw;
+  width: 30px;
 }
 
 button:disabled {
@@ -101,6 +101,7 @@ button:disabled {
 
 .user-main {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -110,7 +111,6 @@ button:disabled {
 }
 
 #activeUser{
-  position: fixed;
   margin-top: 2vw;
 }
 
@@ -140,7 +140,13 @@ button:disabled {
 
 .user td {
   cursor: pointer;
-  font-size: 1.5vw;
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 1020px) {
+  .user td {
+    font-size: 2vw;
+  }
 }
 
 tr th {
