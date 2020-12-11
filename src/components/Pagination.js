@@ -33,7 +33,7 @@ export default class Pagination extends Component {
 			this.renderPageNumbers = this.pageNumbers.map(number => {
 				return (
 					<li
-						className={number === currentPage ? 'page_item_active' : 'page_item'}
+						className={number === currentPage ? 'page-item-active' : 'page-item'}
 						key={number}
 						id={number}
 						onClick={this.handleClick}
