@@ -1,0 +1,115 @@
+@font-face{
+  font-family: 'Faustina-Bold';
+  src: url(../fonts/Faustina-Bold.ttf)
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.btn {
+  background-color: #543c52;
+  color: white;
+  font-family: 'Faustina-Bold';
+}
+  
+.btn:hover{
+  background-color: #f55951;
+  color: #543c52;
+}
+
+.activeBtn {
+  background-color:#e94584d5;
+}
+
+.index_table {
+    background-color: #f55951;
+    color: white;
+}
+
+#user-active {
+  background-color:rgba(0,0,0,.1);  
+}
+  
+.page_item {
+  background-color: #543c52;
+  color: white;
+  border: solid 1px white;
+  padding: 0.5vw 0.5vw;
+}
+
+.page_item:hover {
+  background-color: #f55951;
+  color: #fff;
+  cursor: pointer;
+}
+
+.page_item_active {
+  background-color: #f55951;
+  color: #fff;
+  border: solid 1px #f55951;
+  padding: 0.5vw 0.5vw;
+}
+
+#message {
+  padding-top: 1vw;
+  display: flex;
+  justify-content: center;
+  font-family: 'Faustina-Bold';
+}
+
+#button {
+  padding-top: 2vw;
+}
+
+#search-bar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#search {
+  width: 15px;
+}
+
+#activeUser{
+  position: fixed;
+}
+
+#load {
+  width: 100px;
+}
+
+#folder{
+  width: 50px;
+}
+
+#sad {
+  width: 50px;
+}
+#alert{
+  text-align: center;
+  display: none;
+}
+
+#loading {
+  text-align: center;
+}
+
+#content {
+  display: none;
+}
+
+.user td {
+  cursor: pointer;
+}
+
+tr th {
+  cursor: pointer;
+}
+
+.form-inline {
+  margin-top: 20px;
+}
+
+.addUser {
+  height: 100%;
+}
