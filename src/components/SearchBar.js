@@ -1,7 +1,7 @@
 import React from 'react';
 import searchp from '../img/search.svg';
 
-export default ({ search, initialData, dataType, update }) => {
+const SearchBar = ({ search, initialData, dataType, update }) => {
   const dataSearch = () => {
     const value = search.toLowerCase();
     const filteredData = initialData[dataType].filter(user => {
@@ -57,3 +57,5 @@ export default ({ search, initialData, dataType, update }) => {
     </div>
   );
 };
+
+export default SearchBar;

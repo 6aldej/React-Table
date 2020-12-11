@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({ user, update, index }) => {
+const UserData = ({ user, update, index }) => {
 	return (
 		<tr className="user" onClick={() => update({ active: index })}>
 			<td>{user.id}</td>
@@ -11,3 +11,5 @@ export default ({ user, update, index }) => {
 		</tr>
 	);
 };
+
+export default UserData;

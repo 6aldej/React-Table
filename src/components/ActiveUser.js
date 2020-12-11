@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({ data, active }) => {
+const ActiveUser  = ({ data, active }) => {
 	if (!data || !data[active]) {
 		return '';
 	}
@@ -47,3 +47,5 @@ export default ({ data, active }) => {
 		</table>
 	);
 };
+
+export default ActiveUser;

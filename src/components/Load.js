@@ -1,4 +1,4 @@
-export default async type => {
+const LoadF = async (type) => {
 	const DataMin =
 		'http://www.filltext.com/?rows=32&id={number|1000}&firstName={firstName}&lastName={lastName}&email={email}&phone={phone|(xxx)xxx-xx-xx}&address={addressObject}&description={lorem|32}';
 	const DataBig =
@@ -19,3 +19,5 @@ export default async type => {
 	
 	return await res.json();
 };
+
+export default LoadF;
