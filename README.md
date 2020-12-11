@@ -1,4 +1,4 @@
-![Image alt](https://github.com/6aldej/ImagesForProjects/blob/master/react-table/about1.png)
+![Image alt](https://github.com/6aldej/ImagesForProjects/blob/master/react-table/about1.1.png)
 
  🌍Деплой приложения на **Heroku:** <https://react-table-data.herokuapp.com/>.  
 
