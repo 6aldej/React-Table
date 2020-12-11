@@ -105,7 +105,7 @@ export default class AddUser extends Component {
                 >
                    {inputs}
                     <button
-                        className="addUser btn btn-primary mb-2"
+                        className="addUser btn mb-2"
                         type="submit"
                         disabled={this.state.active}
                         >

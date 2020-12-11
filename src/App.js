@@ -6,7 +6,7 @@ import Toolbar from './components/Toolbar';
 import Pagination from './components/Pagination';
 import AddUser from './components/AddUser';
 import BtnFilter from './components/BtnFilter';
-import folder from './img/folder.svg';
+import Header from './components/Header'
 
 export default class App extends Component {
   constructor(props) {
@@ -99,17 +99,11 @@ export default class App extends Component {
     return (
       <div className="app container-fluid">
         <div className="row-fluid">
-
-          <div className="col-sm-12" id="message">
-            <h2>Please select data set </h2>
-            <img id="folder" src={folder} alt="folder"/>
-          </div>
-
+          <Header/>
           <BtnFilter
             switchDataType={this.switchDataType.bind(this)}
             filter={this.state.filter}
           />
-
           <div id="content">
             <div className="col-sm-6" id="search-bar">
               <Searchbar
@@ -121,13 +115,14 @@ export default class App extends Component {
               />
             </div>
 
-            <div id="add">
+            <div className="col-sm-10" id="add">
               <button
-              className="btn col-sm-6"
+              className="btn col-sm-4"
               onClick={this.addTable.bind(this)}
               >
                 Add in table
               </button>
+
               <AddUser 
                 add={this.state.add}
                 initialData={this.state.initialData}
@@ -136,9 +131,9 @@ export default class App extends Component {
               />
             </div>
 
-            <div className="row">
+            <div className="user-main row col-sm-12">
               <div className="col-sm-6">
-                <table className="user-list table table-striped table-hover">
+                <table className="user-list table table-bordered table-striped table-hover">
                   <Toolbar
                     data={this.state.currentData}
                     update={this.updateData.bind(this)}
@@ -154,7 +149,7 @@ export default class App extends Component {
                 </table>
               </div>
 
-              <div className="col-sm-6">
+              <div className="active-user-cont col-sm-6">
                 <div id="activeUser">
                 <ActiveUser
                   data={this.state.currentData}

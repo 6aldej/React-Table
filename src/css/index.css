@@ -1,6 +1,28 @@
-@font-face{
+@font-face {
   font-family: 'Faustina-Bold';
-  src: url(../fonts/Faustina-Bold.ttf)
+  src: url(../fonts/Faustina-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Gugi';
+  src: url(../fonts/Gugi-Regular.ttf);
+}
+
+body {
+  background: #ffffff;
+}
+
+#root {
+  margin-top: 1vw;
+}
+.header-title {
+  display: flex;
+  justify-content: left;
+  font-family: 'Gugi';
+}
+
+.header-title img{
+  width: 3vw;
 }
 
 button:disabled {
@@ -8,23 +30,30 @@ button:disabled {
 }
 
 .btn {
-  background-color: #543c52;
+  background-color: #305065;
   color: white;
   font-family: 'Faustina-Bold';
 }
   
-.btn:hover{
-  background-color: #f55951;
-  color: #543c52;
+.btn:hover {
+  background-color:#305065d0;
+}
+
+.btn:active {
+  transform: translate(0px, 1px);
 }
 
 .activeBtn {
-  background-color:#e94584d5;
+  background-color:#5bc895;
 }
 
 .index_table {
-    background-color: #f55951;
+    background-color: #958fba;
     color: white;
+}
+
+.user-list {
+  margin-top: 2vw;
 }
 
 #user-active {
@@ -32,22 +61,22 @@ button:disabled {
 }
   
 .page_item {
-  background-color: #543c52;
+  background-color: #305065;
   color: white;
   border: solid 1px white;
   padding: 0.5vw 0.5vw;
 }
 
 .page_item:hover {
-  background-color: #f55951;
+  background-color: #305065d0;
   color: #fff;
   cursor: pointer;
 }
 
 .page_item_active {
-  background-color: #f55951;
+  background-color: #5bc895;
   color: #fff;
-  border: solid 1px #f55951;
+  border: solid 1px #3aa573;
   padding: 0.5vw 0.5vw;
 }
 
@@ -70,12 +99,23 @@ button:disabled {
   width: 15px;
 }
 
+.user-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.active-user-cont {
+  display: flex;
+  justify-content: center;
+}
+
 #activeUser{
   position: fixed;
+  margin-top: 2vw;
 }
 
 #load {
-  width: 100px;
+  width: 150px;
 }
 
 #folder{
@@ -113,3 +153,4 @@ tr th {
 .addUser {
   height: 100%;
 }
+
